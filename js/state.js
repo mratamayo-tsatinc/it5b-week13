@@ -111,12 +111,12 @@ const DEFAULT_APP_SETTINGS = Object.freeze({
   settingsPolicy: 'state-only',
   // Deployment-owned switches. Browser-saved settings cannot override these.
   // Each mode keeps its own per-student snapshot when enabled.
-  persistence: Object.freeze({practice:false, exam:true}),
+  persistence: Object.freeze({practice:true, exam:true}),
   mode: 'practice',
   timerMinutes: 120,
   shell: DEFAULT_SHELL_SETTINGS,
   practice: Object.freeze({
-    interactionMode: 'guided', // guided | strict-sequence
+    interactionMode: 'strict-sequence', // guided | strict-sequence
     manualResponses:Object.freeze({mode:'profile',namedValueRate:50,operatorRate:50})
   }),
   exam: Object.freeze({
