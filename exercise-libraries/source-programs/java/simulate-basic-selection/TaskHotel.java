@@ -21,8 +21,7 @@ public class TaskHotel
             choice = 1;
         }
 
-        switch (choice)
-        {
+        switch (choice) {
             case 1:
                 result = result + 5;
                 a = a + 1;
